@@ -31,8 +31,6 @@ plt.show()
 
 #fit k means to dataset  
 kmeans = KMeans(n_clusters=5, init='k-means++', n_init=10, max_iter=300, random_state=0)
-#kmeans.fit(X)
-#Y_kmeans = kmeans.predict(X) long method
 Y_kmeans = kmeans.fit_predict(X)
 
 #Visualize
